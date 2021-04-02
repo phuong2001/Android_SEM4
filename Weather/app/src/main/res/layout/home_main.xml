@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_weather"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/tvHn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ha noi"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/tvPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phrase"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvHn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="100dp"
+            android:id="@+id/tvTemperature"
+            android:text="27"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvPhrase"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#186;"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_toRightOf="@+id/tvTemperature"
+            android:layout_alignTop="@+id/tvTemperature"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvNews"
+            android:layout_below="@id/tvTemperature"
+            />
+
+
+
+
+
+</RelativeLayout>
